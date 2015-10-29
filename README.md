@@ -6,9 +6,9 @@ Generally, annoying things don't get used. This project renames those types
 so that using fixed-size data types is encouraged.
 
 This defines the following types:
-s{8,16,32,64} - signed {8,16,32,64}-bit integers
-u{8,16,32,64} - unsigned {8,16,32,64}-bit integers
-f{32,64} - {32,64}-bit floating point values
+* s{8,16,32,64} - signed {8,16,32,64}-bit integers
+* u{8,16,32,64} - unsigned {8,16,32,64}-bit integers
+* f{32,64} - {32,64}-bit floating point values
 
 Example:
 ```cpp
