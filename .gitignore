@@ -28,5 +28,6 @@
 *.app
 
 # build dirs
+bin/
 bld/
 inc/
