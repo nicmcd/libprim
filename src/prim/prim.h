@@ -31,8 +31,8 @@
 #ifndef PRIM_PRIM_H_
 #define PRIM_PRIM_H_
 
-#include <cstdint>
 #include <climits>
+#include <cstdint>
 #include <limits>
 
 typedef std::int8_t s8;

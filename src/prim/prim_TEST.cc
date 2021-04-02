@@ -28,11 +28,11 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#include <gtest/gtest.h>
+#include "prim/prim.h"
 
 #include <cmath>
 
-#include "prim/prim.h"
+#include "gtest/gtest.h"
 
 TEST(prim, size) {
   ASSERT_EQ(sizeof(s8), 1u);
@@ -62,7 +62,6 @@ TEST(prim, values) {
   ASSERT_EQ(S32_MAX, (s32)0x7fffffff);
 
   ASSERT_EQ(U32_MAX, (u32)0xffffffff);
-
 
   ASSERT_EQ(S64_MIN, (s64)0x8000000000000000);
   ASSERT_EQ(S64_MAX, (s64)0x7fffffffffffffff);
