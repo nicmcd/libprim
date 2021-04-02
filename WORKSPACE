@@ -12,7 +12,7 @@ http_file(
   urls = ["https://raw.githubusercontent.com/nicmcd/pkgbuild/master/cpplint.BUILD"],
 )
 
-release = "1.3.0"
+release = "1.5.4"
 http_archive(
   name = "cpplint",
   urls = ["https://github.com/cpplint/cpplint/archive/" + release + ".tar.gz"],
