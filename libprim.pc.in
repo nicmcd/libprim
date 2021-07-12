@@ -9,6 +9,6 @@ Name: libprim
 Description: Native data types for C++ renamed for convience
 URL: https://github.com/nicmcd/libprim
 Version: 0.1.0
-Requires:
+Requires: 
 Libs: -L${libdir} -lprim
 Cflags: -I${includedir}
