@@ -69,7 +69,7 @@ constexpr f32 F32_MIN = std::numeric_limits<f32>::min();
 constexpr f32 F32_MAX = std::numeric_limits<f32>::max();
 constexpr f32 F32_NAN = std::numeric_limits<f32>::quiet_NaN();
 constexpr f32 F32_POS_INF = std::numeric_limits<f32>::infinity();
-constexpr f32 F32_NEG_INF = -1.0 * F32_POS_INF;
+constexpr f32 F32_NEG_INF = -std::numeric_limits<f32>::infinity();
 
 typedef double f64;
 constexpr f64 F64_EPS = std::numeric_limits<f64>::epsilon();
@@ -77,6 +77,6 @@ constexpr f64 F64_MIN = std::numeric_limits<f64>::min();
 constexpr f64 F64_MAX = std::numeric_limits<f64>::max();
 constexpr f64 F64_NAN = std::numeric_limits<f64>::quiet_NaN();
 constexpr f64 F64_POS_INF = std::numeric_limits<f64>::infinity();
-constexpr f64 F64_NEG_INF = -1.0 * F64_POS_INF;
+constexpr f64 F64_NEG_INF = -std::numeric_limits<f64>::infinity();
 
 #endif  // PRIM_PRIM_H_

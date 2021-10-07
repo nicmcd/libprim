@@ -74,6 +74,8 @@ TEST(prim, values) {
   ASSERT_FALSE(std::isinf(F32_MIN));
   ASSERT_FALSE(std::isinf(F32_MAX));
   ASSERT_TRUE(std::isinf(F32_MAX * (f32)2.0));
+  ASSERT_EQ(F32_POS_INF, std::numeric_limits<f32>::infinity());
+  ASSERT_EQ(F32_NEG_INF, -1.0 * std::numeric_limits<f32>::infinity());
 
   ASSERT_TRUE(std::isnan(F64_NAN));
   ASSERT_TRUE(std::isinf(F64_POS_INF));
@@ -81,4 +83,6 @@ TEST(prim, values) {
   ASSERT_FALSE(std::isinf(F64_MIN));
   ASSERT_FALSE(std::isinf(F64_MAX));
   ASSERT_TRUE(std::isinf(F64_MAX * (f64)2.0));
+  ASSERT_EQ(F64_POS_INF, std::numeric_limits<f64>::infinity());
+  ASSERT_EQ(F64_NEG_INF, -1.0 * std::numeric_limits<f64>::infinity());
 }
